@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ruggmatt.dev</title>
+  <meta name="description" content="A directory of RuggMatt's public apps.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --card: #ffffff;
+      --text: #1b1f24;
+      --muted: #5b6470;
+      --border: #e2e5ea;
+      --accent: #2f6fde;
+      --shadow: 0 1px 2px rgba(0,0,0,.04), 0 4px 16px rgba(0,0,0,.04);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111418;
+        --card: #1a1e24;
+        --text: #e8ebef;
+        --muted: #9aa3ae;
+        --border: #2a3038;
+        --accent: #6ea0ff;
+        --shadow: none;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main { max-width: 760px; margin: 0 auto; padding: 56px 16px 40px; }
+    h1 { margin: 0 0 4px; font-size: 1.9rem; letter-spacing: -.02em; }
+    .sub { margin: 0 0 32px; color: var(--muted); }
+    ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+    a.card {
+      display: flex; gap: 16px; align-items: center;
+      padding: 18px 20px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      color: inherit; text-decoration: none;
+      transition: border-color .15s, transform .15s;
+    }
+    a.card:hover, a.card:focus-visible { border-color: var(--accent); transform: translateY(-1px); outline: none; }
+    .icon { font-size: 1.8rem; flex: none; width: 2.4rem; text-align: center; }
+    .body { flex: 1; min-width: 0; }
+    .name { font-weight: 600; font-size: 1.05rem; }
+    .desc { color: var(--muted); font-size: .95rem; }
+    .url { color: var(--accent); font-size: .85rem; overflow-wrap: anywhere; }
+    footer { margin-top: 40px; color: var(--muted); font-size: .85rem; text-align: center; }
+    footer a { color: inherit; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>ruggmatt.dev</h1>
+    <p class="sub">A few little apps I've built.</p>
+    <ul>
+      <li>
+        <a class="card" href="https://bus.ruggmatt.dev">
+          <span class="icon" aria-hidden="true">🚌</span>
+          <span class="body">
+            <span class="name">Bus</span><br>
+            <span class="desc">Live ETS bus data, visualized.</span><br>
+            <span class="url">bus.ruggmatt.dev</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="card" href="https://bot.ruggmatt.dev">
+          <span class="icon" aria-hidden="true">🤖</span>
+          <span class="body">
+            <span class="name">Bot</span><br>
+            <span class="desc">The official site for ruggmattbot.</span><br>
+            <span class="url">bot.ruggmatt.dev</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="card" href="https://busbingo.netlify.app">
+          <span class="icon" aria-hidden="true">🎯</span>
+          <span class="body">
+            <span class="name">Bus Bingo</span><br>
+            <span class="desc">Mark off the buses you spot around Edmonton.</span><br>
+            <span class="url">busbingo.netlify.app</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="card" href="https://sirens.ruggmatt.dev">
+          <span class="icon" aria-hidden="true">🚒</span>
+          <span class="body">
+            <span class="name">Sirens</span><br>
+            <span class="desc">Hear sirens in Edmonton? Get a notification when the reason is known.</span><br>
+            <span class="url">sirens.ruggmatt.dev</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="card" href="https://prayer.ruggmatt.dev">
+          <span class="icon" aria-hidden="true">🙏</span>
+          <span class="body">
+            <span class="name">Prayer</span><br>
+            <span class="desc">Keep a prayer list and mark which ones have been answered.</span><br>
+            <span class="url">prayer.ruggmatt.dev</span>
+          </span>
+        </a>
+      </li>
+    </ul>
+    <footer>More on <a href="https://github.com/RuggMatt">GitHub</a></footer>
+  </main>
+</body>
+</html>
