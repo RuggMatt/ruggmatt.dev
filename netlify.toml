@@ -1,0 +1,10 @@
+# Static site: no build step, publish the repo root.
+[build]
+  publish = "."
+
+# The page uses no JavaScript, so block all scripts. This also stops
+# Netlify's injected "Powered by Netlify" badge script from running.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "script-src 'none'"
